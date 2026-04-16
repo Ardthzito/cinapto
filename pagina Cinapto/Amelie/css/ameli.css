@@ -1,0 +1,104 @@
+body {
+  background-image: url("../img/Fondoamelie.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+.atkinson-hyperlegible-regular {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.atkinson-hyperlegible-bold {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.atkinson-hyperlegible-regular-italic {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.atkinson-hyperlegible-bold-italic {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+h1{
+    font-size: 80pt;
+}
+
+
+
+.img-uniforme{
+    
+    border-radius: 8px;
+    
+}
+.box-soft {
+  transition: transform .3s ease, box-shadow .3s ease;
+   border-radius: 24px;
+}
+
+.box-soft:hover {
+  transform: translateY(-10px);
+ 
+ 
+}
+
+div{
+    background-color:  rgb(0, 183, 255);
+}
+
+
+#btn-detener {
+  position: fixed;
+  top: 10px;
+  right: 10px; /* puedes cambiar a left si lo quieres del otro lado */
+  z-index: 9999; /* para que esté por encima de todo */
+
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Accesibilidad: foco visible */
+#btn-detener:focus {
+  outline: 3px solid yellow;
+}
+
+#fondotitle{
+background-color: rgb(0, 183, 255);
+}
+.flecha {
+  position: fixed;
+  right: 20px;
+  padding: 10px 15px;
+  font-size: 20px;
+  border: none;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.abajo {
+  bottom: 20px;
+}
+
+.arriba {
+  bottom: 70px;
+}
+
+.flecha:hover {
+  background-color: #444;
+}
