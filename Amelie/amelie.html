@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Amelie y los secretos de la lluvia</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/ameli.css">
+  <link rel="icon" href="img/rainbow.png" type="image/png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navbar con logo de Cinapto -->
+  <nav class="navbar navbar-dark sticky-top">
+    <a class="navbar-brand" href="/index.html">
+      <img src="img/Cinapto.png" width="300" height="auto" alt="Botón página principal Cinapto">
+    </a>
+  </nav>
+
+   <button onclick="speechSynthesis.cancel()" id="btn-detener" aria-label="Detener lectura de voz">
+  ⛔ Detener lectura
+</button>
+<button class="flecha abajo" onclick="scrollAbajo()">↓</button>
+<button class="flecha arriba" onclick="scrollArriba()">↑</button>
+
+  <div id="background"></div>
+
+  <main class="container my-5 mb-4">
+
+    <!-- HEADER -->
+    <header class="mb-5 ">
+      <section class="row overflow-hidden align-items-center box-soft" id="fondotitle">
+        <div class="col-lg-8">
+          <h1 class="atkinson-hyperlegible-bold-italic">AMELIE Y LOS SECRETOS DE LA LLUVIA</h1>
+        </div>
+        <div class="col-lg-4">
+          <img src="img/ameliecaminando.jfif"
+            alt="Póster oficial de Amelie y los secretos de la lluvia. Una niña pequeña con expresión de asombro, rodeada de colores pastel suaves que evocan un jardín japonés lluvioso."
+            class="img-fluid img-uniforme">
+        </div>
+      </section>
+    </header>
+
+
+    <!-- Sección Introducción -->
+    <section class="box-soft mb-5" aria-labelledby="Introduccion">
+      <div class="row align-items-center box-soft p-4">
+
+        <!-- TEXTO -->
+        <div id="texto-intro" class="col-lg-9">
+          <h2 id="Introduccion" class="card-title atkinson-hyperlegible-bold-italic">Introducción</h2>
+          <p></p>
+          <p class="card-text">
+            <em>Amelie y los secretos de la lluvia</em> es una película animada franco-belga dirigida por <b>Maïlys Vallade</b>
+            y <b>Liane-Cho Han</b>, quienes tardaron siete años en realizarla. Está basada en la novela autobiográfica
+            <em>Metafísica de los tubos</em> de la escritora belga Amélie Nothomb, que narra sus propios recuerdos de
+            infancia en Japón a finales de los años 60.
+          </p>
+          <p>
+            La película sigue a Amélie, una niña belga de dos y tres años, hija de un diplomático, que vive con su familia
+            en una hermosa zona suburbana de Japón. Con una animación en 2D de colores pastel y una sensibilidad muy cercana
+            al cine de Studio Ghibli, la cinta combina humor filosófico, ternura y una mirada íntima sobre cómo una niña
+            pequeña descubre la alegría, la amistad y las primeras notas de tristeza.
+          </p>
+          <p>
+            La película se estrenó en el <b>Festival de Cine de Cannes 2025</b> y fue nominada al
+            <b>Premio de la Academia (Oscar)</b> y al <b>BAFTA</b> como Mejor Película Animada, con un 98% de aprobación
+            en Rotten Tomatoes.
+          </p>
+          <button class="btn btn-escuchar mb-2" onclick="leer('texto-intro')" aria-label="Escuchar introducción">
+            🔊 Escuchar Texto
+          </button>
+        </div>
+
+        <!-- IMAGEN -->
+        <div class="col-lg-3 text-center">
+          <img id="img-Introduccion" src="img/posteramelie.jpg"
+            alt="Póster cinematográfico de Amelie y los secretos de la lluvia. Una niña pequeña con expresión curiosa y ojos grandes, rodeada de colores suaves en tonos pastel que evocan la naturaleza japonesa y la lluvia."
+            class="img-fluid my-2">
+          <button class="btn-escuchar mt-2" onclick="leerAlt('img-Introduccion')" aria-label="Escuchar descripción de imagen de introducción">
+            🖼️ Describir imagen
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Sección Amélie -->
+    <section class="box-soft mb-5" aria-labelledby="amelie">
+      <div class="row align-items-center box-soft p-4">
+
+        <!-- TEXTO -->
+        <div id="texto-amelie" class="col-lg-9">
+          <h2 id="amelie" class="card-title atkinson-hyperlegible-bold">
+            Amélie interpretada por: <em>Loïse Charpentier</em>
+          </h2>
+          <p></p>
+          <p>
+            <b>Loïse Charpentier</b> presta su voz a la protagonista en la versión original francesa. Amélie es una niña
+            belga con una vida interior sorprendentemente filosófica para su edad, lo que la convierte en uno de los
+            personajes animados más memorables de los últimos años.
+          </p>
+          <p class="card-text">
+            Su papel: protagonista absoluta de la historia. Durante sus dos primeros años de vida, Amélie existe en un
+            estado casi pasivo, percibiéndose a sí misma como un simple "tubo" que existe. Es el amor de su abuela y
+            el primer sabor del chocolate blanco lo que la despierta y la conecta con el mundo.
+          </p>
+          <p>
+            Curiosa, imaginativa y sensible, Amélie descubre la naturaleza, la comida, la amistad y los pequeños rituales
+            cotidianos. Pero también aprende que nada es permanente, y su tercer cumpleaños marcará un antes y un después
+            en su forma de ver la vida.
+          </p>
+          <button class="btn btn-escuchar mb-2" onclick="leer('texto-amelie')" aria-label="Escuchar texto de Amélie">
+            🔊 Escuchar texto
+          </button>
+        </div>
+
+        <!-- IMAGEN -->
+        <div class="col-lg-3 text-center">
+          <img id="img-amelie" src="img/amelieenlanieve.webp"
+            alt="Amelie, la protagonista animada: una niña pequeña de cabello oscuro y expresión curiosa y soñadora. Sus ojos grandes reflejan asombro. Está rodeada de un entorno con colores pastel suaves, con vegetación japonesa al fondo."
+            class="img-fluid img-uniforme my-2">
+          <button class="btn-escuchar mt-2" onclick="leerAlt('img-amelie')" aria-label="Escuchar descripción de imagen de Amélie">
+            🖼️ Describir imagen
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Sección Nishio-san -->
+    <section class="box-soft mb-5" aria-labelledby="nishio">
+      <div class="row align-items-center box-soft p-4">
+        <div id="texto-nishio" class="col-lg-9">
+          <h2 id="nishio" class="card-title atkinson-hyperlegible-bold">
+            Nishio-san interpretada por: <em>Victoria Grosbois</em>
+          </h2>
+          <p></p>
+          <p class="card-text">
+            La compañera de vida de Amélie en Japón. Se conocen desde que la niña era bebé y la relación que construyen
+            juntas es el corazón emocional de la película.
+          </p>
+          <p>
+            Nishio-san es el ama de llaves y niñera de la familia. Es la persona que más tiempo comparte con Amélie en
+            su día a día, convirtiéndose en su primera gran amiga y guía en el descubrimiento del mundo. Su presencia
+            cálida y paciente es fundamental en el despertar emocional de la protagonista.
+          </p>
+          <p>
+            A través de Nishio-san, Amélie aprende a observar los pequeños rituales de la vida cotidiana con atención
+            y gratitud. Ella representa el encuentro afectivo entre dos culturas muy diferentes.
+          </p>
+          <button class="btn btn-escuchar mb-2" onclick="leer('texto-nishio')" aria-label="Escuchar texto de Nishio-san">
+            🔊 Escuchar Nishio-san
+          </button>
+        </div>
+        <!-- IMAGEN -->
+        <div class="col-lg-3 text-center">
+          <img id="img-nishio" src="img/Nishio-san.jpg"
+            alt="Nishio-san: una mujer japonesa de mediana edad con expresión amable y serena. Su mirada transmite calidez y paciencia. Viste de manera sencilla y cotidiana, propia de una persona que cuida un hogar con dedicación."
+            class="img-fluid img-uniforme my-2">
+          <button class="btn-escuchar mt-2" onclick="leerAlt('img-nishio')" aria-label="Escuchar descripción de imagen de Nishio-san">
+            🖼️ Describir imagen
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Sección Historia -->
+    <section class="box-soft mb-5" aria-labelledby="historia">
+      <div class="row align-items-center box-soft p-4">
+        <div id="texto-historia" class="col-lg-9">
+          <h2 id="historia" class="card-title atkinson-hyperlegible-bold">
+            <em>Historia de la película</em>
+          </h2>
+          <p></p>
+          <p class="card-text">
+            La película arranca con una idea audaz: durante sus dos primeros años de vida, Amélie existe en un estado
+            casi vegetativo, percibiéndose a sí misma como un "tubo" pasivo que simplemente existe. Es el amor de
+            su abuela y el primer sabor del chocolate blanco lo que la despierta y la conecta con el mundo.
+          </p>
+          <p>
+            A partir de ese momento, Amélie comienza a descubrir la naturaleza japonesa, los rituales cotidianos,
+            la comida y la amistad con Nishio-san. La historia transcurre en una hermosa zona suburbana del Japón
+            de los años 60, donde el contacto directo con la naturaleza da forma a sus primeras experiencias
+            sensoriales y emocionales.
+          </p>
+          <p>
+            Sin embargo, durante su tercer cumpleaños, un suceso inesperado irrumpe en su rutina y transforma su
+            percepción de todo lo que la rodea. Por primera vez, la alegría y la tristeza se presentan con la misma
+            fuerza, marcando el inicio de un despertar emocional que definirá su forma de ver el mundo para siempre.
+          </p>
+          <button class="btn btn-escuchar mb-2" onclick="leer('texto-historia')" aria-label="Escuchar historia de la película">
+            🔊 Escuchar Historia
+          </button>
+        </div>
+        <!-- IMAGEN -->
+        <div class="col-lg-3 text-center">
+          <img id="img-historia" src="img/familia.webp"
+            alt="La familia de Amélie sentada alrededor de una mesa en su hogar japonés. La escena muestra un momento cotidiano lleno de calidez, con tonos pastel suaves y la luz del día entrando por las ventanas."
+            class="img-fluid my-2">
+          <button class="btn-escuchar mt-2" onclick="leerAlt('img-historia')" aria-label="Escuchar descripción de imagen de la historia">
+            🖼️ Describir imagen
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Sección Temas -->
+    <section class="box-soft mb-5" aria-labelledby="temas">
+      <div class="row align-items-center box-soft p-4">
+        <div id="texto-temas" class="col-lg-9">
+          <h2 id="temas" class="card-title atkinson-hyperlegible-bold">
+            <em>Temas de la película</em>
+          </h2>
+          <p></p>
+          <p>
+            <b>Identidad y conciencia:</b> la película explora cómo una persona se convierte en individuo. Amélie pasa
+            de percibirse como un "tubo" pasivo a descubrir que tiene deseos, miedos y una perspectiva única del mundo.
+          </p>
+          <p>
+            <b>Amistad:</b> la relación con Nishio-san muestra cómo los lazos afectivos más tempranos dan forma a nuestra
+            manera de ver el mundo. Una amistad cotidiana, cálida y llena de pequeños momentos que pesan mucho.
+          </p>
+          <p>
+            <b>Pérdida y temporalidad:</b> uno de los grandes descubrimientos de Amélie es que nada es permanente.
+            La película trata este tema con delicadeza, sin dramatismo fácil, ayudando a los más pequeños a encontrar
+            palabras para emociones difíciles.
+          </p>
+          <p>
+            <b>Encuentro de culturas:</b> el cruce entre la familia belga y la sociedad japonesa de los años 60 es un
+            telón de fondo constante. La película muestra con sensibilidad las tensiones y el resentimiento del
+            Japón de posguerra hacia los europeos, pero también los momentos de encuentro genuino.
+          </p>
+          <button class="btn btn-escuchar mb-2" onclick="leer('texto-temas')" aria-label="Escuchar temas de la película">
+            🔊 Escuchar Temas
+          </button>
+        </div>
+        <!-- IMAGEN -->
+        <div class="col-lg-3 text-center">
+          <img id="img-temas" src="img/Arcoiris.jpg"
+            alt="Un arcoíris sobre un paisaje japonés lluvioso, evocando los temas centrales de la película: la belleza efímera, el paso del tiempo y la mezcla de emociones que caracterizan la infancia de Amélie."
+            class="img-fluid my-2">
+          <button class="btn-escuchar mt-2" onclick="leerAlt('img-temas')" aria-label="Escuchar descripción de imagen de temas">
+            🖼️ Describir imagen
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Sección Tráiler -->
+    <section class="box-soft mb-5" aria-labelledby="trailer">
+      <div class="row align-items-center box-soft p-4">
+        <div class="col-lg-6">
+          <h2 id="trailer" class="card-title atkinson-hyperlegible-bold">Tráiler accesible</h2>
+          <p class="card-text">
+            Aquí encontrarás el video accesible del tráiler de la película. Puedes activar los subtítulos
+            usando el botón <b>CC</b> en el reproductor de YouTube.
+          </p>
+        </div>
+        <!-- VIDEO -->
+        <div class="col-lg-4 text-center">
+          <iframe width="500" height="300"
+            src="https://www.youtube.com/embed/DjRe_kSDZ-g?si=NQ9Az_jgrUuxlqls"
+            title="Tráiler oficial de Amelie y los secretos de la lluvia"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Sección Soundtrack -->
+    <section class="box-soft mb-5" aria-labelledby="soundtrack">
+      <div class="row align-items-center box-soft p-4">
+        <div class="col-lg-6">
+          <h2 id="soundtrack" class="card-title atkinson-hyperlegible-bold">Soundtrack</h2>
+          <p></p>
+          <p class="card-text">
+            La música original de <em>Amelie y los secretos de la lluvia</em> fue compuesta por <b>Mari Fukuhara</b>,
+            quien creó una banda sonora delicada e íntima que acompaña cada descubrimiento de Amélie. Los instrumentos
+            de cuerda y las melodías suaves refuerzan la sensación de contemplación y ternura que caracteriza a
+            la película.
+          </p>
+          <p>
+            La partitura logra transmitir tanto la alegría del descubrimiento como la melancolía de la pérdida,
+            acompañando cada emoción de Amélie sin subrayarla en exceso. Un trabajo musical que fue destacado
+            por la crítica especializada junto al resto de los elementos artísticos de la película.
+          </p>
+        </div>
+        <!-- VIDEO -->
+        <div class="col-lg-4 text-center">
+          <iframe width="500" height="300"
+            src="https://www.youtube.com/embed/qKM0WBoeJts?si=lVQdkI4ZrzIKiHl-"
+            title="Música y soundtrack de Amelie y los secretos de la lluvia"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+       </section>
+
+
+  </main>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- TU JS -->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

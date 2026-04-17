@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Logo */
+.logo {
+  max-width: 200px;
+}
+
+/* Figura */
+.figura {
+  position: relative;
+  width: 250px;
+  height: 180px;
+}
+
+/* Triángulo */
+.triangulo {
+  width: 0;
+  height: 0;
+  border-left: 120px solid transparent;
+  border-bottom: 80px solid white;
+  position: absolute;
+  bottom: 0;
+}
+
+/* Línea */
+.linea-vertical {
+  position: absolute;
+  right: 40px;
+  bottom: 0;
+  width: 2px;
+  height: 120px;
+  background: white;
+}
+
+/* Círculos */
+.circulo {
+  width: 35px;
+  height: 35px;
+  border: 2px solid white;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+}
+
+.c1 {
+  right: 60px;
+}
+
+.c2 {
+  right: 0;
+}
+
+/* Poster */
+.poster {
+  transition: transform 0.3s ease;
+}
+
+.poster:hover {
+  transform: scale(1.1);
+}
