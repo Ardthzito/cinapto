@@ -60,3 +60,26 @@ body {
 .poster:hover {
   transform: scale(1.1);
 }
+.flecha {
+  position: fixed;
+  right: 20px;
+  padding: 10px 15px;
+  font-size: 20px;
+  border: none;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.abajo {
+  bottom: 20px;
+}
+
+.arriba {
+  bottom: 70px;
+}
+
+.flecha:hover {
+  background-color: #444;
+}
