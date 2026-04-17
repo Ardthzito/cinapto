@@ -75,3 +75,17 @@ function leerAlt(imgId) {
   speechSynthesis.cancel();
   speechSynthesis.speak(voz);
 }
+function scrollAbajo() {
+  window.scrollBy({
+    top: window.innerHeight,
+    behavior: 'smooth'
+  });
+}
+
+function scrollArriba() {
+  window.scrollBy({
+    top: -window.innerHeight,
+    behavior: 'smooth'
+  });
+}
+
