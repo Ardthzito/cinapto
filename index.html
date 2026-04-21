@@ -69,6 +69,39 @@
     border-radius: 8px;
     
 }
+    .footer {
+  background-color: #111;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.footer-item {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+.footer-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.2s;
+}
+
+.footer-item:hover img {
+  transform: scale(1.1);
+}
+
+.footer-item p {
+  margin-top: 8px;
+  font-size: 14px;
+}
 
 
 
@@ -158,6 +191,26 @@
 
   </main>
 
+  <footer class="footer">
+  <div class="footer-container">
+    
+    <a href="pagina1.html" class="footer-item">
+      <img src="imetaclogo.png" alt="Página 1">
+      <p>Página 1</p>
+    </a>
+
+    <a href="pagina2.html" class="footer-item">
+      <img src="logouam.png" alt="Página 2">
+      <p>Página 2</p>
+    </a>
+
+    <a href="pagina3.html" class="footer-item">
+      <img src="cinetecalogo.png" alt="Página 3">
+      <p>Página 3</p>
+    </a>
+
+  </div>
+</footer>
   <script>
     const track = document.getElementById('carousel-track');
     const viewport = document.getElementById('carousel-viewport');
